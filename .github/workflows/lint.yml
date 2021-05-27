@@ -1,0 +1,11 @@
+name: hexlet-check
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+run:
+  make lint
