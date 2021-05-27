@@ -1,6 +1,5 @@
-name: hexlet-check
+name: lint
 
-on:
   on:
   push:
     branches: [main]
