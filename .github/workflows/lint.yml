@@ -6,6 +6,10 @@ on:
       - '**'
     tags:
       - '**'
-
-run:
-  make lint
+jobs:
+  buildAndTest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      run:
+        make lint
