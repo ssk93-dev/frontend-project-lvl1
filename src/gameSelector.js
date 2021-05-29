@@ -18,6 +18,6 @@ export default (choose = undefined) => {
   if (choose !== undefined) {
     return gameLauncher(choose);
   }
-  const game = readlineSync.keyInSelect(games, 'Which game you would to play?');
+  const game = readlineSync.keyInSelect(games, 'Which game would you like to play?');
   return gameLauncher(games[game]);
 };
