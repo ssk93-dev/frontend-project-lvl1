@@ -9,7 +9,7 @@ const logic = () => {
   const missingNumberIndex = Math.floor(Math.random() * (progression.length - 1) + 1);
   const rightAnswer = progression[missingNumberIndex];
   progression[progression.indexOf(rightAnswer)] = '..';
-  console.log(`Question: ${progression}`);
+  console.log(`Question: ${progression.join(' ')}`);
   const userAnswer = Number(readlineSync.question('Your answer: '));
   if (userAnswer !== rightAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
