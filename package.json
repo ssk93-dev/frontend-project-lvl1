@@ -14,7 +14,8 @@
   "author": "Sergei Kalikin",
   "license": "ISC",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "bugs": {
     "url": "https://github.com/ssk93-dev/frontend-project-lvl1/issues"
