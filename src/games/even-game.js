@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import isEven from '../math-functions.js';
+import { isEven } from '../math-functions.js';
 
 const greeting = () => {
-  console.log('Welcome to even game!');
+  console.log('Welcome to the Even game!');
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 };
 const logic = () => {
