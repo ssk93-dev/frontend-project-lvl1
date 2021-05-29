@@ -5,9 +5,9 @@ const question = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 };
 const logic = () => {
-  const number = getRandomNumber4000();
-  const rightAnswer = isPrime(number);
-  console.log(`Question: ${number}`);
+  const numberPrime = getRandomNumber4000();
+  const rightAnswer = isPrime(numberPrime);
+  console.log(`Question: ${numberPrime}`);
   const userAnswer = readlineSync.question('Your answer: ');
   if (userAnswer !== rightAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
