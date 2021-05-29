@@ -23,7 +23,15 @@ const getRandomProgression = () => {
   }
   return progression;
 };
+const getRandomNumber4000 = () => Math.floor(Math.random() * 4000);
+const isPrime = (number) => {
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) {
+      return 'no';
+    }
+  } return 'yes';
+};
 
 export {
-  isEven, getRandomNumber, getRandom3, getGcd, getRandomProgression,
+  isEven, getRandomNumber, getRandom3, getGcd, getRandomProgression, isPrime, getRandomNumber4000,
 };

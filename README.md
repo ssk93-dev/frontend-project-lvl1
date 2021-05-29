@@ -10,3 +10,5 @@ https://asciinema.org/a/vYgCkHkpSO9c8Fhy88XycFxLU
 https://asciinema.org/a/oEmwUDw7EIl67NOgOivkr1z8P
 ### brain-progression example:
 https://asciinema.org/a/NgcgCV8Kx7PotTlJywwuYUDKJ
+### brain-prime example:
+https://asciinema.org/a/Zn10LbJcVgntASirmoASf7qLl
