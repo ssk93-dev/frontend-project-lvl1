@@ -4,7 +4,7 @@ import gameSelector from './gameSelector.js';
 export default (selectedGame = undefined) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hi ${userName}!`);
+  console.log(`Hello ${userName}!`);
   const game = gameSelector(selectedGame);
   const currentGameQuestion = game[0];
   const currentGameLogic = game[1];
