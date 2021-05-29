@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
-import { isEven } from '../math-functions.js';
+import { isEven, getRandomNumber } from '../math-functions.js';
 
 const question = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 };
 const logic = () => {
-  const number = Math.floor(Math.random() * 100);
+  const number = getRandomNumber();
   const rightAnswer = isEven(number);
   console.log(`Question: ${number}`);
   const userAnswer = readlineSync.question('Your answer: ');
