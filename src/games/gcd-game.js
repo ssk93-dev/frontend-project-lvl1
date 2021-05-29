@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomNumber, getGcd } from '../math-functions.js';
 
-const greeting = () => {
-  console.log('Welcome to the GCD game!');
+const question = () => {
   console.log('Find the greatest common divisor of given numbers.');
 };
 const logic = () => {
@@ -17,4 +16,4 @@ const logic = () => {
   } return true;
 };
 
-export { greeting, logic };
+export { question, logic };

@@ -8,3 +8,5 @@ https://asciinema.org/a/D0JtGEXDaUgC6i1pmnoYCpjXk
 https://asciinema.org/a/vYgCkHkpSO9c8Fhy88XycFxLU
 ### brain-gcd example:
 https://asciinema.org/a/oEmwUDw7EIl67NOgOivkr1z8P
+### brain-progression example:
+https://asciinema.org/a/NgcgCV8Kx7PotTlJywwuYUDKJ

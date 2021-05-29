@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomNumber, getRandom3 } from '../math-functions.js';
 
-const greeting = () => {
-  console.log('Welcome to the Calc game!');
+const question = () => {
   console.log('What is the result of the expression?');
 };
 const logic = () => {
@@ -26,4 +25,4 @@ const logic = () => {
   } return true;
 };
 
-export { greeting, logic };
+export { question, logic };

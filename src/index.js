@@ -6,9 +6,9 @@ export default (selectedGame = undefined) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hi ${userName}!`);
   const game = gameSelector(selectedGame);
-  const currentGameGreeting = game[0];
+  const currentGameQuestion = game[0];
   const currentGameLogic = game[1];
-  currentGameGreeting();
+  currentGameQuestion();
   let userWin = true;
   let i = 0;
   while (i < 3 && userWin !== false) {
