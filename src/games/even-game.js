@@ -1,18 +1,21 @@
-import readlineSync from 'readline-sync';
-import { isEven, getRandomNumber } from '../math-functions.js';
+import * as engine from '../index.js';
 
-const question = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const isEven = (number) => {
+  if (number % 2 === 0) {
+    return 'yes';
+  } return 'no';
 };
-const logic = () => {
-  const number = getRandomNumber();
-  const rightAnswer = isEven(number);
-  console.log(`Question: ${number}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-  if (userAnswer !== rightAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-    return false;
-  } return true;
+const getRandomNumber = () => Math.floor(Math.random() * 100);
+export default () => {
+  const questions = [];
+  const rightAnswers = [];
+  const duration = engine.rounds;
+  for (let i = 0; i < duration; i += 1) {
+    const question = getRandomNumber();
+    const rightAnswer = isEven(question);
+    questions.push(question);
+    rightAnswers.push(rightAnswer);
+  }
+  const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+  engine.game(task, questions, rightAnswers, duration);
 };
-
-export { question, logic };

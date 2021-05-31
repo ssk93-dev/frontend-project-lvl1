@@ -1,28 +1,29 @@
-import readlineSync from 'readline-sync';
-import { getRandomNumber, getRandom3 } from '../math-functions.js';
+import * as engine from '../index.js';
 
-const question = () => {
-  console.log('What is the result of the expression?');
-};
-const logic = () => {
+const getRandomNumber = () => Math.floor(Math.random() * 100);
+const getRandom3 = () => Math.floor(Math.random() * 3);
+
+export default () => {
+  const questions = [];
+  const rightAnswers = [];
+  const duration = engine.rounds;
   const signs = ['+', '-', '*'];
-  const sign = signs[getRandom3()];
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
-  let rightAnswer = 0;
-  if (sign === '+') {
-    rightAnswer = number1 + number2;
-  } else if (sign === '-') {
-    rightAnswer = number1 - number2;
-  } else {
-    rightAnswer = number1 * number2;
+  for (let i = 0; i < duration; i += 1) {
+    const sign = signs[getRandom3()];
+    const number1 = getRandomNumber();
+    const number2 = getRandomNumber();
+    let rightAnswer = 0;
+    if (sign === '+') {
+      rightAnswer = String(number1 + number2);
+    } else if (sign === '-') {
+      rightAnswer = String(number1 - number2);
+    } else {
+      rightAnswer = String(number1 * number2);
+    }
+    const question = `${number1} ${sign} ${number2}`;
+    questions.push(question);
+    rightAnswers.push(rightAnswer);
   }
-  console.log(`Question: ${number1} ${sign} ${number2}`);
-  const userAnswer = Number(readlineSync.question('Your answer: '));
-  if (userAnswer !== rightAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-    return false;
-  } return true;
+  const task = 'What is the result of the expression?';
+  engine.game(task, questions, rightAnswers, duration);
 };
-
-export { question, logic };

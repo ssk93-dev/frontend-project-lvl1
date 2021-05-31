@@ -1,19 +1,25 @@
-import readlineSync from 'readline-sync';
-import { getRandomNumber, getGcd } from '../math-functions.js';
+import * as engine from '../index.js';
 
-const question = () => {
-  console.log('Find the greatest common divisor of given numbers.');
-};
-const logic = () => {
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
-  const rightAnswer = getGcd(number1, number2);
-  console.log(`Question: ${number1} ${number2}`);
-  const userAnswer = Number(readlineSync.question('Your answer: '));
-  if (userAnswer !== rightAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-    return false;
-  } return true;
+const getRandomNumber = () => Math.floor(Math.random() * 100);
+const getGcd = (number1, number2) => {
+  if (number2) {
+    return getGcd(number2, number1 % number2);
+  }
+  return Math.abs(number1);
 };
 
-export { question, logic };
+export default () => {
+  const questions = [];
+  const rightAnswers = [];
+  const duration = engine.rounds;
+  for (let i = 0; i < duration; i += 1) {
+    const number1 = getRandomNumber();
+    const number2 = getRandomNumber();
+    const question = `${number1} ${number2}`;
+    const rightAnswer = String(getGcd(number1, number2));
+    questions.push(question);
+    rightAnswers.push(rightAnswer);
+  }
+  const task = 'Find the greatest common divisor of given numbers.';
+  engine.game(task, questions, rightAnswers, duration);
+};
