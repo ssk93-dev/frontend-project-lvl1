@@ -8,8 +8,8 @@ This simple project contains five brain games:
 * Calc game - you should do some calculations.
 * GCD game - you should find the GCD.
 * Progression game - you should find a missing number in arithmetic progression.
-* Prime game - you should answer if a number is prime.
-All of these games last three* rounds. If your answer incorrect - game over.
+* Prime game - you should answer if a number is prime. <br>
+All of these games last three* rounds. If your answer incorrect - game over. <br>
 *-you can change it in the index.js file.
 ## How to use
 After installing, type the following commands to run a game.
