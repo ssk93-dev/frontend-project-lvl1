@@ -17,24 +17,24 @@ After installing, type the following commands to run a game.
 ```sh
 $ brain-even
 ```
-https://asciinema.org/a/CR8H4xRzeHpQsZvbGtL4d0X8S
+[![asciicast](https://asciinema.org/a/CR8H4xRzeHpQsZvbGtL4d0X8S.svg)](https://asciinema.org/a/CR8H4xRzeHpQsZvbGtL4d0X8S)
 ### brain-calc example:
 ```sh
 $ brain-calc
 ```
-https://asciinema.org/a/kA6ahX3g84AlCWsm4FXQC6t3Q
+[![asciicast](https://asciinema.org/a/kA6ahX3g84AlCWsm4FXQC6t3Q.svg)](https://asciinema.org/a/kA6ahX3g84AlCWsm4FXQC6t3Q)
 ### brain-gcd example:
 ```sh
 $ brain-gcd
 ```
-https://asciinema.org/a/9FdZjU94rrn7PokSYOwfD1mt9
+[![asciicast](https://asciinema.org/a/9FdZjU94rrn7PokSYOwfD1mt9.svg)](https://asciinema.org/a/9FdZjU94rrn7PokSYOwfD1mt9)
 ### brain-progression example:
 ```sh
 $ brain-progression
 ```
-https://asciinema.org/a/29IZYw6g9LUOMswbGt4uhjoqM
+[![asciicast](https://asciinema.org/a/29IZYw6g9LUOMswbGt4uhjoqM.svg)](https://asciinema.org/a/29IZYw6g9LUOMswbGt4uhjoqM)
 ### brain-prime example:
 ```sh
 $ brain-prime
 ```
-https://asciinema.org/a/n14TGOSPcf4pSNhE54JU58liQ
+[![asciicast](https://asciinema.org/a/n14TGOSPcf4pSNhE54JU58liQ.svg)](https://asciinema.org/a/n14TGOSPcf4pSNhE54JU58liQ)
