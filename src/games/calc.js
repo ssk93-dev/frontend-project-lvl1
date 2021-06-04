@@ -17,7 +17,7 @@ const makeRound = () => {
   const number1 = getRandomNumber(0, 100);
   const number2 = getRandomNumber(0, 100);
   const question = `${number1} ${operator} ${number2}`;
-  const rightAnswer = Number(calculate(number1, number2, operator));
+  const rightAnswer = String(calculate(number1, number2, operator));
   return [question, rightAnswer];
 };
 
