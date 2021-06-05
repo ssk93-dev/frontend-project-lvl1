@@ -3,12 +3,12 @@ import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 const getRandomProgression = () => {
-  const a = getRandomNumber(0, 100);
-  const d = getRandomNumber(1, 50);
-  const n = getRandomNumber(5, 10);
-  const progression = [a];
-  for (let i = 1; i < n; i += 1) {
-    progression.push(a + d * i);
+  const firstTerm = getRandomNumber(0, 100);
+  const difference = getRandomNumber(1, 50);
+  const size = getRandomNumber(5, 10);
+  const progression = [firstTerm];
+  for (let i = 1; i < size; i += 1) {
+    progression.push(firstTerm + difference * i);
   }
   return progression;
 };
