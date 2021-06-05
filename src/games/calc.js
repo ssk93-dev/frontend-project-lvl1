@@ -4,13 +4,20 @@ import getRandomNumber from '../utils.js';
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const calculate = (number1, number2, operator) => {
-  if (operator === '+') {
-    return number1 + number2;
+  switch (operator) {
+    case '+': {
+      return number1 + number2;
+    }
+    case '-': {
+      return number1 - number2;
+    }
+    case '*': {
+      return number1 * number2;
+    }
+    default: {
+      throw new Error(`Unknown operator: '${operator}'`);
+    }
   }
-  if (operator === '-') {
-    return number1 - number2;
-  }
-  return number1 * number2;
 };
 const makeRound = () => {
   const operator = operators[getRandomNumber(0, 2)];
